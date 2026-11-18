@@ -1,5 +1,9 @@
 # Repo Town
 
+![Repo Town](media/logo-thumbnail.png)
+
+![Pinch a building to open the file](media/screenshot-2-file-open.png)
+
 Any GitHub repo as a tiny city on your tray table, built for Meta Quest hand tracking with WebXR.
 
 **Play:** https://fozagtx.github.io/repo-town/ (Meta Quest Browser → Enter VR → put the controllers down)
