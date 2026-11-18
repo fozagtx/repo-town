@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='2' y='6' width='4' height='8' fill='%23f2b56b'/><rect x='7' y='2' width='4' height='12' fill='%2378c4ff'/><rect x='12' y='8' width='3' height='6' fill='%2396e6a1'/></svg>">
+<title>Repo Town</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #10131c; color: #eef1f8; font-family: system-ui, sans-serif; overflow: hidden; }
+  #intro { position: fixed; left: 16px; top: 16px; max-width: 300px; font-size: 12px; line-height: 1.5; background: rgba(16,19,28,.85); padding: 12px 14px; border-radius: 10px; }
+  #intro h1 { font-size: 18px; margin: 0 0 6px; }
+  #intro form { display: flex; gap: 6px; margin-top: 8px; }
+  #intro input { flex: 1; min-width: 0; padding: 6px 8px; border-radius: 6px; border: 1px solid #3a4255; background: #1a1f2c; color: inherit; }
+  #intro button { padding: 6px 10px; border-radius: 6px; border: 0; background: #78c4ff; color: #0b1020; font-weight: 600; }
+  #intro a { color: #9fd3ff; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="intro">
+  <h1>Repo Town</h1>
+  Any GitHub repo as a tiny city on your tray table. Folders are districts, files are buildings, and a building's height is its file size. <b>Pinch a building</b> to read the file. <b>Pinch the ground and drag</b> to spin the town. In VR, pinch a sign on the left to switch towns.
+  <form id="f"><input id="repo" placeholder="owner/repo" aria-label="GitHub repo"><button>Build town</button></form>
+  On Quest: press <b>Enter VR</b> and put the controllers down. On desktop: click and drag. <a href="?emulate">Emulator mode</a>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
